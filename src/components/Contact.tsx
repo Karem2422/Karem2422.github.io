@@ -29,12 +29,16 @@ const Contact = () => {
                         If you have a project that needs some creative touch, or just want to say hi, my inbox is always open.
                     </p>
 
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" className="space-y-4 text-left">
-                        {/* 
-                          TODO: Create a free account at https://formspree.io
-                          Create a new form, and paste your unique Form ID in the action URL above 
-                          (replace YOUR_FORM_ID with the actual code).
-                        */}
+                    <form
+                        onSubmit={(e) => {
+                            e.preventDefault();
+                            const formData = new FormData(e.currentTarget);
+                            const subject = `Portfolio Contact from ${formData.get("name")}`;
+                            const body = `Name: ${formData.get("name")}\nEmail: ${formData.get("email")}\n\nMessage:\n${formData.get("message")}`;
+                            window.location.href = `mailto:abdulkaremghassan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                        }}
+                        className="space-y-4 text-left"
+                    >
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-1">Name</label>
                             <input
@@ -72,7 +76,7 @@ const Contact = () => {
                             type="submit"
                             className="w-full py-4 bg-gradient-to-r from-emerald-500 to-sky-500 rounded-lg text-white font-bold text-lg hover:shadow-lg hover:shadow-emerald-500/20 transform hover:-translate-y-1 transition-all duration-300"
                         >
-                            Send Message
+                            Send Message via Email App
                         </button>
                     </form>
 
