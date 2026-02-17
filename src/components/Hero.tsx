@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 const Hero = () => {
@@ -59,9 +59,7 @@ const Hero = () => {
                         <a href="https://www.linkedin.com/in/abdulkareem-ghassan-a4297b356?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
                             <Linkedin className="w-6 h-6" />
                         </a>
-                        <a href="https://www.instagram.com/its.abdulkareem?utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                            <Instagram className="w-6 h-6" />
-                        </a>
+
                         <a href="mailto:abdulkaremghassan@gmail.com" className="text-slate-400 hover:text-white transition-colors">
                             <Mail className="w-6 h-6" />
                         </a>

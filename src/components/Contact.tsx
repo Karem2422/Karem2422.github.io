@@ -103,14 +103,7 @@ const Contact = () => {
                                 LinkedIn
                             </a>
                             <a href="https://github.com/Karem2422" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">GitHub</a>
-                            <a
-                                href="https://www.instagram.com/its.abdulkareem?utm_source=qr"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-emerald-400 transition-colors"
-                            >
-                                Instagram
-                            </a>
+
                         </div>
                     </div>
                 </motion.div >
