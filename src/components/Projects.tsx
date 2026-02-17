@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 
 interface Project {
     title: string;
@@ -9,16 +9,15 @@ interface Project {
     tags: string[];
     links: {
         github?: string;
-        demo?: string;
     };
 }
 
 const projects: Project[] = [
     {
-        title: "AI Chatbot for Autism Support (Senior Project)",
+        title: "AI Chatbot for Autism Support",
         description: "An intelligent conversational agent designed to assist autistic patients with empathetic interaction patterns.",
         tags: ["NLP", "Neural Networks", "Python", "Flutter"],
-        links: { github: "#", demo: "#" },
+        links: { github: "#" },
     },
     {
         title: "Diabetes Prediction Classification Model",
@@ -30,7 +29,7 @@ const projects: Project[] = [
         title: "Needle and Thread E-commerce",
         description: "A dynamic e-commerce web platform with database integration.",
         tags: ["PHP", "MySQL", "Web Design"],
-        links: { github: "#", demo: "#" },
+        links: { github: "https://github.com/Karem2422" },
     },
     {
         title: "Lumera",
@@ -88,12 +87,6 @@ const Projects = () => {
                                         <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-300 hover:text-white transition-colors text-sm font-medium">
                                             <Github className="w-5 h-5 mr-2" />
                                             GitHub
-                                        </a>
-                                    )}
-                                    {project.links.demo && (
-                                        <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="flex items-center text-slate-300 hover:text-white transition-colors text-sm font-medium">
-                                            <ExternalLink className="w-5 h-5 mr-2" />
-                                            Live Demo
                                         </a>
                                     )}
                                 </div>
