@@ -17,7 +17,7 @@ const projects: Project[] = [
         title: "AI Chatbot for Autism Support",
         description: "An intelligent conversational agent designed to assist autistic patients with empathetic interaction patterns.",
         tags: ["NLP", "Neural Networks", "Python", "Flutter"],
-        links: { github: "#" },
+        links: { github: "https://github.com/Karem2422" },
     },
     {
         title: "Diabetes Prediction Classification Model",

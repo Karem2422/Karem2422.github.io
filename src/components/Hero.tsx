@@ -30,7 +30,7 @@ const Hero = () => {
                     <h2 className="text-xl md:text-2xl text-slate-400 font-light mb-8 max-w-3xl mx-auto h-20 md:h-auto">
                         <span className="font-semibold text-slate-200">Full Stack Web</span> |
                         <span className="font-semibold text-slate-200 mx-2">Mobile Development</span> |
-                        <span className="font-semibold text-slate-200">Machine Learning & NLP</span>
+                        <span className="font-semibold text-slate-200"> Machine Learning & NLP</span>
                     </h2>
 
                     <p className="text-lg text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
