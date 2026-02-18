@@ -37,6 +37,12 @@ const projects: Project[] = [
         tags: ["E-commerce", "Elegance", "Artisan UX", "Web Design"],
         links: { github: "https://github.com/Karem2422" },
     },
+    {
+        title: "Senior Care",
+        description: "A modern, responsive web application designed for a pharmaceutical company specializing in senior care medications and medical supplies in Yemen. Features an interactive product catalog, company information, team profiles, and CSR initiatives.",
+        tags: ["Healthcare", "Web App", "Product Catalog", "Responsive"],
+        links: { github: "https://github.com/Karem2422" },
+    },
 ];
 
 const Projects = () => {
