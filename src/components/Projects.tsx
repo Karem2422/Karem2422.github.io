@@ -43,6 +43,12 @@ const projects: Project[] = [
         tags: ["Healthcare", "Web App", "Product Catalog", "Responsive"],
         links: { github: "https://github.com/Karem2422" },
     },
+    {
+        title: "MindEase Wellness",
+        description: "A comprehensive mental health platform offering mood tracking, guided meditation sessions, and a secure portal for connecting with licensed therapists. Built with a focus on data privacy and user-centric UI to promote daily mindfulness.",
+        tags: ["Mental Health", "Wellness", "Data Visualization", "User Authentication"],
+        links: { github: "https://github.com/Karem2422" },
+    },
 ];
 
 const Projects = () => {
